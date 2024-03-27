@@ -10,9 +10,9 @@ export default function Page() {
           </h1>
           <p>Take the train or the bus!</p>
           <p className="text-left">
-            "From my lifelong experience, I believe that creating memories with
-            warm-hearted locals is what truly stays in your heart for a long
-            time." <i>- Aunt Yuko</i>
+            &quot;From my lifelong experience, I believe that creating memories
+            with warm-hearted locals is what truly stays in your heart for a
+            long time.&quot; <i>- Aunt Yuko</i>
           </p>
         </div>
         <Image
