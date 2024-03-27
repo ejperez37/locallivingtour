@@ -3,16 +3,16 @@ import Image from 'next/image'
 export default function Page() {
   return (
     <>
-      <main className="flex flex-row items-center justify-evenly my-14">
+      <main className="flex flex-col md:flex-row items-center justify-evenly my-14 space-y-4 mx-4">
         <Image
           src="/riverexample.jpeg"
           width={500}
           height={400}
           alt="placeholder discover page"
-          className="rounded-2xl"
+          className="rounded-2xl shrink"
         />
-        <div className="w-1/2 text-left space-y-4">
-          <h1 className="text-2xl">
+        <div className="md:w-1/2 text-center md:text-left space-y-4">
+          <h1 className="text-2xl font-bold">
             Come and visit me, your Japanese aunt / guide to an authentic local
             living experience, <em>just</em> outside of Tokyo.
           </h1>
@@ -28,8 +28,8 @@ export default function Page() {
           </p>
         </div>
       </main>
-      <section className="p-20">
-        <div className="flex flex-row justify-between items-stretch">
+      <section className="md:p-20">
+        <div className="flex flex-col space-y-10 md:flex-row justify-between items-stretch md:space-y-0">
           <a className="hover:scale-125 transition duration-500 ease-in-out">
             <Image
               src="/foodexample.png"
@@ -67,7 +67,7 @@ export default function Page() {
             <p className="text-center">ramen masterclass</p>
           </a>
         </div>
-        <div className="flex flex-row items-center justify-around">
+        <div className="flex flex-col md:flex-row items-center justify-around space-y-10 py-10 md:space-y-0">
           <a className="hover:scale-125 transition duration-500 ease-in-out">
             <Image
               src="/natureexample.png"

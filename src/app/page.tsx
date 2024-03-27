@@ -3,20 +3,20 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <>
-      <main className="md:mb-24 md:ms-3">
-        <div className="flex flex-col md:flex-row-reverse max-w-full">
+      <main className="md:ms-3 mb-12">
+        <div className="flex flex-col max-w-full items-center md:flex-row-reverse">
           <Image
-            src="/tallLogo.png"
+            src="/updatedTallLogo.png"
             alt="Local Living Tour Aunt Yuko logo"
             width={500}
             height={400}
-            className="me-4"
+            className="md:me-4"
           />
-          <div className="mx-4 md:ms-16 text-center my-auto">
-            <h1 className="text-4xl mb-5 mainTitle">
+          <div className="mx-4 md:ms-16 text-center">
+            <h1 className="text-3xl md:text-4xl mb-5 font-bold">
               Welcome to a journey beyond the ordinary Japan!
             </h1>
-            <h2 className="mb-5 text-xl">
+            <h2 className="text-xl">
               Are you ready to uncover the hidden gems of this beautiful
               country? Whether it&#39;s your first time planning a trip or
               you&#39;re a returning traveler seeking a deeper exploration,
@@ -69,7 +69,7 @@ export default function Home() {
           className="showcaseImage rounded-2xl"
         />
       </section>
-      <section className="text-center md:p-20 md:mb-10 flex flex-row">
+      <section className="text-center md:p-20 md:mb-10 flex flex-row my-6">
         <Image
           src="/riverexample.jpeg"
           alt="collage of Indigo tye-die experience"
@@ -84,18 +84,17 @@ export default function Home() {
             of their own.{' '}
           </p>
           <p className="p-4">
-            From my lifelong experience, I believe that creating memories with
-            warm-hearted locals is what truly stays in your heart for a long
-            time.{' '}
-          </p>
-          <p className="p-4">
             Let me create a special plan for your visit to my hometown based on
             your interests and the time of your visit.{' '}
           </p>{' '}
           <h3 className="p-4 font-bold">
             Aunt Yuko is thrilled to be a part of your unforgettable Japanese
             adventure! Your dream journey to Japan can start today, just send me
-            an email!
+            an{' '}
+            <a href="mailto:" className="underline underline-offset-2">
+              email
+            </a>
+            !
           </h3>
         </div>
       </section>
